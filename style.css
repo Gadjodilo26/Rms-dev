@@ -1,0 +1,525 @@
+/*Reset CSS*/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Avenir, sans-serif;
+  
+}
+
+body {
+  
+  color: black;
+  background:linear-gradient(orange,red);
+  color: aliceblue;
+}
+
+#logo {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+/*En-tête pages LAMP*/
+
+.logo_header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-top: 40px;
+  align-items: center;
+  border: 2px solid aliceblue;
+  background-color: rgba(0, 0, 0, 0.267);
+  border-radius: 15px;
+
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*----------------------------------------------------------------------*/
+
+h1 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: black;
+  color: aliceblue;
+  height: 120px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/*Contenu*/
+
+main {
+  z-index: 1;
+  
+}
+
+nav {
+  z-index: 5;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid aliceblue;
+  background-color: rgba(0, 0, 0, 0.267);
+  justify-content: space-between;
+  padding: 45px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+h2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  box-shadow: 0px 0px 10px #eee7e7,
+  0px 0px 30px #111111;
+  border-radius: 15px;
+  margin-bottom: 30px;
+
+}
+
+h3 {
+  margin: 20px;
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+p {
+  width: 98%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 20px;
+  word-spacing: 0.5px;
+  font-size: 22px;
+
+}
+
+.logo {
+  margin: auto;
+  width: 30%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.logo a {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.media {
+  width: 98%;
+  height: 600px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 980px) {
+
+/*Barre de navigation*/
+
+  label {
+    width: 100%;
+    padding: 2px;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    z-index: 5;
+  }
+
+  nav input[type=checkbox] {
+    display: none;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: none;
+    z-index: 1;
+
+  }
+
+  nav input[type=checkbox]:checked+ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: black;
+    box-shadow: 0px 4px 10px #ccc;
+    position: fixed;
+    width: 100%;
+  }
+
+  .deroulant {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+
+
+  }
+
+  .deroulant a {
+    text-decoration: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 40px;
+    text-align: center;
+    border-bottom: 2px solid aliceblue;
+    color: aliceblue;
+
+  }
+
+
+  .sous {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  .sous a {
+
+    border-bottom: 2px solid transparent;
+    
+  }
+  
+  .sous li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    
+  }
+  
+  .logoreseau {
+    display: flex;
+    height: 100%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*-------------------------------------------------------------------*/
+  
+  /*Entête Site*/
+  
+  header {
+    height: 500px;
+    width: 100%;
+    background:linear-gradient(orange,red);
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .firstlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: auto;
+  }
+
+  .logocontent {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  max-width: 900px;
+}
+
+.logobox {
+
+    height: 45%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .logobox img{
+    width: auto;
+    height: 50px;
+  }
+
+/*-----------------------------------------------------------------------*/
+  h1 {
+
+    height: 100px;
+    background-color: black;
+
+
+  }
+
+
+/*Entête Site LAMP*/
+
+  .title {
+    height: 200px;
+  }
+
+  .logo_header {
+    height: 100px;
+    width: 95%;
+  }
+
+  .medium_logo {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50%;
+  }
+
+/*Contenu*/  
+
+  main {
+    width: 95%;
+    margin: auto;
+  }
+
+  .small_logo {
+    width: auto;
+    height: 80px;
+    margin: auto;
+  }
+  
+}
+
+@media screen and (min-width:980px) {
+
+/*Barre de navigation*/
+
+  label {
+    display: none;
+  }
+
+  input {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+    height: 35px;
+    margin: 0 0;
+    background: black;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    align-items: center;
+  }
+  
+  .deroulant {
+    display: block;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    text-decoration: none;
+  }
+  
+  .sous {
+    display: none;
+    flex-flow: column;
+    justify-content: left;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(25, 31, 25, 0.753);
+    text-decoration: none;
+    list-style-type: none;
+    border-top: 2px solid gold;
+    margin-top: -2px;
+  }
+  
+  .deroulant:hover .sous {
+    display: flex;
+
+  }
+  
+  nav a {
+    text-decoration: none;
+    display: flex;
+    flex-flow: column;
+    border-bottom: 2px solid transparent;
+    justify-content: center;
+    height: 100%;
+    color: aliceblue;
+  }
+  
+  nav a:hover {
+    color: gold;
+    
+  }
+  
+  
+  .sous li {
+    height: 35px;
+    text-align: left;
+  }
+  
+  
+  .sous a {
+    color: aliceblue;
+  }
+  
+  .sous a:hover {
+    border-bottom: none;
+    background-color: rgba(0, 0, 0, 0.103);
+    color: gold;
+  }
+  
+  .logoreseau {
+    display: flex;
+    height: 100%;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+  }
+
+/*-----------------------------------------------------------------*/  
+
+/*En tête site*/
+
+  header {
+    width: 100%;
+    background:linear-gradient(orange,red);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 800px;
+  }
+  
+  .firstlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    width: auto;
+    height: 50%;
+    
+  }
+  
+  .logocontent {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    margin-bottom: 20px;
+    
+  }
+  
+  .logobox {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logobox img{
+    width: auto;
+    height: 80px;
+    
+  }
+    
+/*---------------------------------------------------------*/
+
+  h1 {
+    font-size: 45px;
+  }
+
+/*Entête Pages LAMP*/
+  
+  .title {
+    height: 300px;
+  }
+
+  .logo_header {
+    height: 200px;
+    width: 95%;
+  }
+
+  .medium_logo {
+    height: 90%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+/*----------------------------------------------------------*/    
+    
+/*Contenu*/
+
+.page {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+  
+  main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 65%;
+    
+  }
+
+  aside {
+    width: 32%;
+    border: 2px solid aliceblue;
+    background-color: rgba(0, 0, 0, 0.267);
+    border-radius: 15px;
+  }
+
+
+  .small_logo {
+    width: auto;
+    height: 80px;
+    margin: auto;
+  }
+
+
+
+
+}
