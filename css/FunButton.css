@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*button interactif index*/
+
+.logobox a {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  opacity: 1;
+  margin: 0;
+}
+
+.off {
+  z-index: 0;
+  position: absolute;
+  margin-top: -2px;
+  margin-left: -2px;
+
+
+}
+
+.on {
+  z-index: 1;
+  position: absolute;
+  transition-property: opacity;
+  transition-duration: 0, 8s;
+}
+
+.on:hover {
+  opacity: 0;
+}
+
+/*button interactif page Lamp*/
+
+
+
+
+img {
+  opacity: 1;
+  margin: 0;
+}
+
+.medium_logo0 {
+
+  
+  z-index: 0;
+  position: absolute;
+  margin-top: -4px;
+  margin-left: -4px;
+
+
+}
+
+.medium_logo {
+  
+  z-index: 1;
+  position: absolute;
+  transition-property: opacity;
+  transition-duration: 0, 8s;
+}
+
+.medium_logo:hover {
+  opacity: 0;
+}
