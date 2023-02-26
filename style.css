@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   font-family: Avenir, sans-serif;
-  
+
 }
 
 
@@ -12,7 +12,7 @@
 body {
   position: relative;
   color: black;
-  background:linear-gradient(orange,red);
+  background: linear-gradient(orange, red);
   color: aliceblue;
 }
 
@@ -22,11 +22,7 @@ body {
   margin-left: 20px;
 }
 
-/*En-tête pages LAMP*/
 
-
-
-/*----------------------------------------------------------------------*/
 
 h1 {
   display: flex;
@@ -44,7 +40,7 @@ h1 {
 
 main {
   z-index: 1;
-  
+
 }
 
 nav {
@@ -73,7 +69,7 @@ h2 {
   text-align: center;
   background-color: black;
   box-shadow: 0px 0px 10px #eee7e7,
-  0px 0px 30px #111111;
+    0px 0px 30px #111111;
   border-radius: 15px;
   margin-bottom: 30px;
 
@@ -95,21 +91,6 @@ p {
 
 }
 
-.logo {
-  margin: auto;
-  width: 30%;
-  height: auto;
-  margin-top: 20px;
-}
-
-.logo a {
-  display: flex;
-  justify-content: center;
-}
-
-
-
-
 .media {
   width: 98%;
   height: 600px;
@@ -120,115 +101,19 @@ p {
 
 @media screen and (max-width: 980px) {
 
-/*Barre de navigation*/
 
-  label {
-    top: 0;
-    width: 100%;
-    padding: 2px;
-    background-color: black;
-    text-align: center;
-    position: fixed;
-    z-index: 5;
-  }
+  /*Entête*/
 
-  nav input[type=checkbox] {
-    display: none;
-  }
-
-  .menu {
-    list-style-type: none;
-    display: none;
-    z-index: 1;
-
-  }
-
-  nav input[type=checkbox]:checked+ul {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    background-color: black;
-    box-shadow: 0px 4px 10px #ccc;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-  }
-
-  .deroulant {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-
-
-  }
-
-  .deroulant a {
-    text-decoration: none;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    height: 40px;
-    text-align: center;
-    border-bottom: 2px solid aliceblue;
-    color: aliceblue;
-
-  }
-
-
-  .sous {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    list-style-type: none;
-  }
-  
-  .sous a {
-
-    border-bottom: 2px solid transparent;
-    
-  }
-  
-  .sous li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    
-  }
-  
-  .logoreseau {
-    display: flex;
-    height: 100%;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /*-------------------------------------------------------------------*/
-  
-  /*Entête Site*/
-  
   header {
     height: 500px;
     width: 100%;
-    background:linear-gradient(orange,red);
+    background: linear-gradient(orange, red);
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
     align-items: center;
   }
-  
+
   .firstlogo {
     display: flex;
     justify-content: center;
@@ -237,32 +122,6 @@ p {
     width: auto;
   }
 
-  .logocontent {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 20%;
-  max-width: 900px;
-}
-
-.logobox {
-
-    height: 45%;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  .logobox img{
-    width: auto;
-    height: 50px;
-  }
-
-/*-----------------------------------------------------------------------*/
   h1 {
 
     height: 100px;
@@ -272,43 +131,19 @@ p {
   }
 
 
-/*Entête Site LAMP*/
-
-.logo_header img {
-  height: 60px;
-  width: auto;
-}  
-
-.title {
-    height: 120px;
-  }
-
-  .logo_header {
-    height: 55%;
-    width: auto;
-  }
-
-  
-  
-
-/*Contenu*/  
+  /*Contenu*/
 
   main {
     width: 95%;
     margin: auto;
   }
 
-  .small_logo {
-    width: auto;
-    height: 80px;
-    margin: auto;
-  }
-  
+
 }
 
 @media screen and (min-width:980px) {
 
-/*Barre de navigation*/
+  /*Barre de navigation*/
 
   label {
     display: none;
@@ -324,7 +159,7 @@ p {
     height: 35px;
     margin: 0 0;
     background: black;
-   position: fixed;
+    position: fixed;
     display: flex;
     justify-content: space-around;
   }
@@ -336,7 +171,7 @@ p {
     width: 90%;
     align-items: center;
   }
-  
+
   .deroulant {
     display: block;
     position: relative;
@@ -345,7 +180,7 @@ p {
     margin: auto;
     text-decoration: none;
   }
-  
+
   .sous {
     display: none;
     flex-flow: column;
@@ -358,12 +193,12 @@ p {
     border-top: 2px solid gold;
     margin-top: -2px;
   }
-  
+
   .deroulant:hover .sous {
     display: flex;
 
   }
-  
+
   nav a {
     text-decoration: none;
     display: flex;
@@ -373,29 +208,29 @@ p {
     height: 100%;
     color: aliceblue;
   }
-  
+
   nav a:hover {
     color: gold;
-    
+
   }
-  
-  
+
+
   .sous li {
     height: 35px;
     text-align: left;
   }
-  
-  
+
+
   .sous a {
     color: aliceblue;
   }
-  
+
   .sous a:hover {
     border-bottom: none;
     background-color: rgba(0, 0, 0, 0.103);
     color: gold;
   }
-  
+
   .logoreseau {
     display: flex;
     height: 100%;
@@ -404,20 +239,19 @@ p {
     align-items: center;
   }
 
-/*-----------------------------------------------------------------*/  
 
-/*En tête site*/
+  /*En tête */
 
   header {
     width: 100%;
-    background:linear-gradient(orange,red);
+    background: linear-gradient(orange, red);
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
     height: 800px;
   }
-  
+
   .firstlogo {
     display: flex;
     justify-content: center;
@@ -425,37 +259,27 @@ p {
     margin-top: 100px;
     width: auto;
     height: 50%;
-    
+
   }
-  
- 
-    
-/*---------------------------------------------------------*/
 
   h1 {
     font-size: 45px;
   }
 
-/*Entête Pages LAMP*/
-  
-  
+  /*Contenu*/
 
-/*----------------------------------------------------------*/    
-    
-/*Contenu*/
-
-.page {
+  .page {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
   }
-  
+
   main {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     width: 65%;
-    
+
   }
 
   aside {
@@ -464,15 +288,5 @@ p {
     background-color: rgba(0, 0, 0, 0.250);
     border-radius: 15px;
   }
-
-
-  .small_logo {
-    width: auto;
-    height: 80px;
-    margin: auto;
-  }
-
-
-
 
 }
