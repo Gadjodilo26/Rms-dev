@@ -22,7 +22,7 @@ h1 {
 
 }
 
-
+/* nav config */
 
 nav {
   width: 95%;
@@ -48,7 +48,7 @@ nav {
   text-align: center;
   list-style-type: none;
   justify-content: space-around;
- 
+
   margin: 5px;
   position: relative;
   flex: 1 1 auto;
@@ -68,7 +68,7 @@ nav {
   text-align: center;
   margin-top: 4px;
   border: 1px solid black;
-  
+
   background-color: rgba(165, 162, 156, 0.267);
   z-index: 1000;
   position: absolute;
@@ -99,16 +99,22 @@ nav a:hover {
   flex: 1 1 auto;
 }
 
+a {
+  display: block;
 
+  padding: 2px;
+}
+/*--------------------------------------------------------------------------------*/
 
 main {
   width: 100%;
   height: 2000px;
 }
 
-
-a {
-  display: block;
-  
-  padding: 2px;
+.essaidock {
+  width: 80%;
+  height: 800px;
+  background-color: white;
+  margin: auto;
 }
+
