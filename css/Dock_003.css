@@ -8,8 +8,11 @@
 
 <div class="dock_003">
 <div class="button_003"><a href="#">
+<div class="img_003">
 <img class="hover_003" src="" alt=img>
-<img class="unhover_003" src="" alt=img></a>
+<img class="unhover_003" src="" alt=img>
+</div>
+</a>
 </div>
 
 </div>
@@ -19,55 +22,111 @@
 
 /*Chaque  type de Dock sera une .dock_none*/
 
-:root .dock_003 {
+@media screen and (max-width: 980px) {
+
+  :root .dock_003 {
 
 
-  /*Variable config Dock*/
+
+    /*Variable config Dock*/
 
 
-  /*-----------------------------------*/
-  /*-----------------------------------
-  
-  -----------------------------------*/
-  --003-img-size-width: auto;
-  --003-img-size-height: 90%;
-  /* config dock*/
+    /*-----------------------------------*/
+    /*-----------------------------------
+    
+    -----------------------------------*/
+    --003-img-size-height: 70px;
+    --003-img-size-width: auto;
+    /* config dock*/
 
-  /*-----------------------------------
-  --003-dock-radius: none;
-  -----------------------------------*/
-  --003-dock-height: 100px;
-  --003-dock-margin-bottom: 35px;
-  --003-dock-margin-top: 50px;
-  --003-dock-width: 95%;
-  --003-dock-margin-left: auto;
-  --003-dock-margin-right: auto;
-  --003-dock-background: none;
-  --003-dock-border: none;
+    /*-----------------------------------
+    --003-dock-radius: none;
+    -----------------------------------*/
+    --003-dock-height: 100px;
+    --003-dock-margin-bottom: 35px;
+    --003-dock-margin-top: 50px;
+    --003-dock-width: 95%;
+    --003-dock-margin-left: auto;
+    --003-dock-margin-right: auto;
+    --003-dock-background: none;
+    --003-dock-border: none;
 
-  /* config button*/
+    /* config button*/
 
-  /*-----------------------------------
-  --003-button-margin-right: none;
-  --003-button-margin-left: none;
-  --003-button-margin-top: none;
-  --003-button-margin-bottom: none;
-  --003-button-border: none;
-  --003-button-radius: none;
-  --003-button-background: none;
-  -----------------------------------*/
-  --003-button-height: 100%;
---003-button-width: 25%;
+    /*-----------------------------------
+    --003-button-margin-right: none;
+    --003-button-margin-left: none;
+    --003-button-margin-top: none;
+    --003-button-margin-bottom: none;
+    --003-button-border: none;
+    --003-button-radius: none;
+    --003-button-background: none;
+    -----------------------------------*/
+    --003-button-height: 100%;
+    --003-button-width: 25%;
 
-  /* décalage unhover*/
+    /* décalage unhover*/
 
-  /*-----------------------------------
---003-U-margin-right: none;
---003-U-margin-bottom: none;
------------------------------------*/
-  --003-U-margin-left: -5px;
-  --003-U-margin-top: -5px;
+    /*-----------------------------------
+    --003-U-margin-right: none;
+    --003-U-margin-bottom: none;
+    -----------------------------------*/
+    --003-U-margin-left: -5px;
+    --003-U-margin-top: -5px;
+  }
+}
 
+@media screen and (min-width:980px) {
+
+  :root .dock_003 {
+
+    /*Variable config Dock*/
+
+
+    --003-img-size-height: 75px;
+    --003-img-size-width: auto;
+    /*-----------------------------------*/
+    /*-----------------------------------
+    
+    -----------------------------------*/
+    /* config dock*/
+
+    --003-dock-width: 80%;
+    --003-dock-height: 100%;
+    /*-----------------------------------
+    --003-dock-margin-right: none;
+    --003-dock-margin-left: none;
+    --003-dock-margin-top: none;
+    -----------------------------------*/
+    --003-dock-margin-bottom: 40px;
+    --003-dock-radius: none;
+    --003-dock-border: none;
+    --003-dock-background: none;
+
+    /* config button*/
+
+    /*-----------------------------------
+    --003-button-height: none;
+    --003-button-width: none;
+    --003-button-margin-right: none;
+    --003-button-margin-left: none;
+    --003-button-margin-top: none;
+    --003-button-margin-bottom: none;
+    --003-button-border: none;
+    --003-button-radius: none;
+    --003-button-background: none;
+    -----------------------------------*/
+
+    /* décalage unhover*/
+
+    /*-----------------------------------
+    --003-U-margin-right: none;
+    --003-U-margin-left: none;
+    --003-U-margin-top: none;
+    --003-U-margin-bottom: none;
+    -----------------------------------*/
+
+  }
 
 }
 
@@ -80,14 +139,14 @@
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
- 
+
 
   width: var(--003-dock-width, 90%);
   height: var(--003-dock-height, 50%);
-  margin-right: var(--003-dock-margin-right,auto);
-  margin-left: var(--003-dock-margin-left,auto);
-  margin-top: var(--003-dock-margin-top,20px);
-  margin-bottom: var(--003-dock-margin-bottom,20px);
+  margin-right: var(--003-dock-margin-right, auto);
+  margin-left: var(--003-dock-margin-left, auto);
+  margin-top: var(--003-dock-margin-top, 20px);
+  margin-bottom: var(--003-dock-margin-bottom, 20px);
   border: var(--003-dock-border, 2px solid black);
   border-radius: var(--003-dock-radius, 15px);
   background: var(--003-dock-background, rgba(0, 0, 0, 0.322));

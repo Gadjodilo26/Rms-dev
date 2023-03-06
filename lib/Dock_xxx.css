@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -23,24 +22,79 @@
 
 /*Chaque  type de Dock sera une .dock_none*/
 
-:root .dock_xxx{
+
+@media screen and (max-width: 980px) {
+
+  :root .dock_xxx {
+
+    /*Variable config Dock*/
 
 
-  /*Variable config Dock*/
+    /*-----------------------------------*/
+    /*-----------------------------------
+    --xxx-img-size-width: auto;
+    --xxx-img-size-height:75px;
+    
+    -----------------------------------*/
+    /* config dock*/
+
+    /*-----------------------------------
+    --xxx-dock-width: none;
+    --xxx-dock-height: none;
+    --xxx-dock-margin-right: none;
+    --xxx-dock-margin-left: none;
+    --xxx-dock-margin-top: none;
+    --xxx-dock-margin-bottom: none;
+    --xxx-dock-border: none;
+    --xxx-dock-radius: none;
+    --xxx-dock-background: none;
+    -----------------------------------*/
+
+    /* config button*/
+
+    /*-----------------------------------
+    --xxx-button-height: none;
+    --xxx-button-width: none;
+    --xxx-button-margin-right: none;
+    --xxx-button-margin-left: none;
+    --xxx-button-margin-top: none;
+    --xxx-button-margin-bottom: none;
+    --xxx-button-border: none;
+    --xxx-button-radius: none;
+    --xxx-button-background: none;
+    -----------------------------------*/
+
+    /* décalage unhover*/
+
+    /*-----------------------------------
+    --xxx-U-margin-right: none;
+    --xxx-U-margin-left: none;
+    --xxx-U-margin-top: none;
+    --xxx-U-margin-bottom: none;
+    -----------------------------------*/
+
+  }
+}
+
+@media screen and (min-width:980px) {
+
+  :root .dock_xxx {
+
+    /*Variable config Dock*/
 
 
-  /*-----------------------------------*/
-  /*-----------------------------------
---xxx-img-size-width: auto;
---xxx-img-size-height:75px;
+    /*-----------------------------------*/
+    /*-----------------------------------
+    --xxx-img-size-width: auto;
+    --xxx-img-size-height:75px;
+    
+    -----------------------------------*/
+    /* config dock*/
 
------------------------------------*/
-  /* config dock*/
-
-  /*-----------------------------------
---xxx-dock-width: none;
---xxx-dock-height: none;
---xxx-dock-margin-right: none;
+    /*-----------------------------------
+    --xxx-dock-width: none;
+    --xxx-dock-height: none;
+    --xxx-dock-margin-right: none;
 --xxx-dock-margin-left: none;
 --xxx-dock-margin-top: none;
 --xxx-dock-margin-bottom: none;
@@ -49,9 +103,9 @@
 --xxx-dock-background: none;
 -----------------------------------*/
 
-  /* config button*/
+    /* config button*/
 
-  /*-----------------------------------
+    /*-----------------------------------
 --xxx-button-height: none;
 --xxx-button-width: none;
 --xxx-button-margin-right: none;
@@ -63,18 +117,18 @@
 --xxx-button-background: none;
 -----------------------------------*/
 
-  /* décalage unhover*/
+    /* décalage unhover*/
 
-  /*-----------------------------------
+    /*-----------------------------------
 --xxx-U-margin-right: none;
 --xxx-U-margin-left: none;
 --xxx-U-margin-top: none;
 --xxx-U-margin-bottom: none;
 -----------------------------------*/
 
+  }
 
 }
-
 
 /*button interactif index*/
 
@@ -85,15 +139,15 @@
   justify-content: space-around;
   align-items: center;
 
-  width: var(--xxx-dock-width,90%);
-  height: var(--xxx-dock-height,100px);
+  width: var(--xxx-dock-width, 90%);
+  height: var(--xxx-dock-height, 100px);
   margin-right: var(--xxx-dock-margin-right);
   margin-left: var(--xxx-dock-margin-left);
   margin-top: var(--xxx-dock-margin-top);
   margin-bottom: var(--xxx-dock-margin-bottom);
-  border: var(--xxx-dock-border,2px solid black);
-  border-radius: var(--xxx-dock-radius,15px);
-  background: var(--xxx-dock-background,rgba(0, 0, 0, 0.322));
+  border: var(--xxx-dock-border, 2px solid black);
+  border-radius: var(--xxx-dock-radius, 15px);
+  background: var(--xxx-dock-background, rgba(0, 0, 0, 0.322));
 }
 
 .button_xxx {
@@ -105,19 +159,19 @@
 
   height: var(--xxx-button-height, 100%);
   width: var(--xxx-button-width, 100%);
-  margin-right: var(--xxx-button-margin-right,0);
-  margin-left: var(--xxx-button-margin-left,0);
-  margin-top: var(--xxx-button-margin-top,0);
-  margin-bottom: var(--xxx-button-margin-bottom,0);
+  margin-right: var(--xxx-button-margin-right, 0);
+  margin-left: var(--xxx-button-margin-left, 0);
+  margin-top: var(--xxx-button-margin-top, 0);
+  margin-bottom: var(--xxx-button-margin-bottom, 0);
   border: var(--xxx-button-border, none);
-  border-radius: var(--xxx-button-radius,none);
-  background: var(--xxx-button-background,none);
+  border-radius: var(--xxx-button-radius, none);
+  background: var(--xxx-button-background, none);
 
 }
 
 .button_xxx img {
-  width: var(--xxx-img-size-width,auto);
-  height: var(--xxx-img-size-height,85px);
+  width: var(--xxx-img-size-width, auto);
+  height: var(--xxx-img-size-height, 85px);
 
 
 }
@@ -134,7 +188,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  Height:100%;
+  Height: 100%;
   position: relative;
 }
 
@@ -144,11 +198,12 @@
   z-index: 0;
   position: absolute;
 
-  margin-right: var(--xxx-U-margin-right,0);
-  margin-left: var(--xxx-U-margin-left,-5px);
-  margin-top: var(--xxx-U-margin-top,-5px);
-  margin-bottom: var(--xxx-U-margin-bottom,0);
+  margin-right: var(--xxx-U-margin-right, 0);
+  margin-left: var(--xxx-U-margin-left, -5px);
+  margin-top: var(--xxx-U-margin-top, -5px);
+  margin-bottom: var(--xxx-U-margin-bottom, 0);
 }
+
 .hover_xxx {
   opacity: 1;
   z-index: 1;

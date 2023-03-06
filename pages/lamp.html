@@ -78,25 +78,28 @@
       <article>
         <h2>Pourquoi installer un serveur HTTP ?</h2>
         <div>
-          <p>Installer votre propre serveur web vous permettra, à la fois d'avoir votre serveur pour produire du code,
-            pouvoir le contrôler en direct et également de vous familiariser avec l'environnement Linux Ubuntu, qui fait
-            partie des éléments très intéressants du domaine informatique.</p>
-          <p>Le serveur Apache est un serveur HTTP qui s'installe très simplement sur Ubuntu, je l'utilise pour héberger
-            mon site web que je développe directement dessus. Aujourd'hui les environnements de développement
-            fournissent des serveurs qui vous permettent d'avoir un rendu direct, mais l'utilité de pouvoir mettre en
-            ligne son site Web sans avoir à passer par un hébergeur, cela aide également à comprendre le fonctionnement
-            des noms de domaine et des serveurs Web, comment obtenir un nom de domaine et l'affilier à un dossier de
+          <p>Poourquoi installer votre propre serveur HTTP ? <strong> le side rendering est disponible partout</strong>.
+            Cest un outil util qui m'a permis de me familiariser avec Ubuntu.
+          </p>
+          <p>Le serveur <a href="https://fr.wikipedia.org/wiki/Apache_HTTP_Server" target="_blank">Apache</a>
+            s'installe très simplement sur <a href="https://doc.ubuntu-fr.org/accueil" target="_blank"> Ubuntu</a>.
+            Le fait de pouvoir mettre en
+            ligne son site, sans avoir à passer par un hébergeur aide à comprendre le fonctionnement
+            des noms de domaine et des serveurs, comment obtenir un nom de domaine et l'affilier à un dossier de
             production.</p>
-          <p>Le serveur LAMP regroupe 4 technologies, acronyme de Linux Apache MYsql et PHP. Son installation du serveur
-            nécessite donc d'avoir déjà le système d'exploitation Ubuntu/Linux installé.
-            La deuxième étape sera l'installation du serveur Apache qui est assez simple sur Ubuntu, il y a beaucoup de
-            tuto sur le web et je vais vous expliquer comment l'installer simplement. Il faut ensuite le configurer soit
-            le mettre à jour et le laisser lire les ports 80 et 443.</p>
-          <p>Par la suite la création d'un hôte virtuel vous permettra d'héberger votre site sous le nom de domaine que
-            vous voulez.
-            Il faudra ensuite installer un système de gestion de base de données, MySQL POSTGRE sont beaucoup utilisé et
-            très efficace. Pour finir l'installation de PHP est indispensable pour pouvoir créer des sites dynamiques et
-            pouvoir ainsi apporter des fonctionnalités différentes et une interactivité.</p>
+          <p>Le serveur LAMP regroupe 4 technologies, acronyme de <a href="https://doc.ubuntu-fr.org/linux"
+              target="_blank">Linux</a>, Apache, <a href="https://fr.wikipedia.org/wiki/MySQL" target="_blank">
+              MYsql</a>
+            et <a href="https://fr.wikipedia.org/wiki/PHP" target="_blank"> PHP</a>, son installation
+            nécessite donc d'avoir déjà le système d'exploitation Ubuntu/Linux présent.
+            On installe ensuite Apache, il y a beaucoup de
+            tuto disponible, je vais vous expliquer comment l'installer, le configurer et
+            le mettre à jour.</p>
+          <p>Par la suite la création d'un hôte virtuel vous permettra d'héberger votre site sous votre nom de domaine.
+
+            Pour finir on installe un SGBD (service de gestion de base de données) et PHP, et votre serveur peut
+            maintenant héberger des sites dynamiques.
+          </p>
         </div>
         <div class="dock_003">
           <div class="button_003"><a href="./linux.html">
@@ -132,43 +135,36 @@
       </article>
 
       <article>
-        <h2>Le serveur HTTP et les sites WEB</h2>
+        <h2>Qu'est ce qu'un serveur HTTP ?</h2>
         <div>
-          <p>Le serveur HTTP héberge votre site, le navigateur reçoit des requêtes, comme consulter une adresse ou un
-            nom de domaine qui correspond à une adresse IP.<br>
-            Une adresse IP est une série de chiffres semblable à un code barre. <br>
-            Les noms de domaine sont fournis par des serveurs DNS. <br>
+          <p>Un serveur HTTP est un ordinateur qui héberge et diffuse du contenu, <i>site web</i>, sur les navigateurs à
+            leurs demandes <i>(requêtes http)</i>
+            <br>
+            Lorsque vous tapez une adresse, un nom de domaine, dans le navigateur, lui va chercher une <a
+              href="https://fr.wikipedia.org/wiki/Adresse_IP" target="_blank"> adresse ip</a>. C'est une série de
+            chiffres
+            semblable à un code barre. <br>
+            Les noms de domaine sont fournis par des <a href="https://fr.wikipedia.org/wiki/Domain_Name_System"
+              target="_blank"> serveurs DNS</a> qui associent les adresses ip à des noms de domaines propriétaires. <br>
             Le navigateur envoie une requête à l'adresse que vous lui avez demandé, cette requête sera reçu par un
-            serveur HTTP, en retour vous recevrez sur votre navigateur le contenu demandé.</p>
+            serveur HTTP, en retour vous recevrez sur votre navigateur le contenu demandé.
+          </p>
 
-          <p>PHP sera le lien éventuel avec un serveur de base de données et vous permettra également de concevoir des
-            fonctions de génération et d'automatisation de contenu.
-            Il est indispensable lorsque l'on veut pouvoir interagir avec un site web notamment pour des forums, des
-            moyens de paiement ou pouvoir créer un compte utilisateur.
-            Il n'est pas visible coté navigateur, il agira uniquement coté serveur, c'est le language Back End. Ainsi on
-            crée des sites dynamiques, variantes beaucoup plus fonctionnel aux sites statiques.</p>
+          <h2>HTML et CSS</h2>
 
           <p>Un navigateur web n'est capable de lire uniquement HTML, CSS, et JavaScript ce sont 3 langages qu'il est
-            capable de comprendre d'interpréter et de traduire ce sont les languages Front End.<br>
-            HTML et CSS sont des langages très puissant et irremplaçable au sein du développement web, il correspondent
+            capable de comprendre d'interpréter et de traduire, ce sont les languages Front End, Apache seul ne pourra
+            diffuser que des fichiers html et css. Javascript nécessitera un serveur différent. HTML et CSS sont des
+            langages très puissant et irremplaçable au sein du développement web, il correspondent
             à tout le contenu et tout le style de texte, les couleurs, les polices de caractères, taille, fond d'écran,
-            etc... Que vous pouvez voir sur les sites.<br>HTML/CSS permet simplement de publier du contenu, savoir
-            l'utiliser est la base du développement web.</p>
+            etc... Que vous pouvez voir sur les sites.</p>
 
-          <p>HTML correspond à l'architecture de l'intégralité du contenu de votre site web, il est organisé sous forme
-            de balise sémantique auquel vous pouvez attribuer des classes, il sera intégré dans votre site sous forme de
-            fichier HTML que vous placerez dans des répertoires, enregfistrés sur votre serveur HTTP.<br>
-            CSS est en quelque sorte le fichier de configuration, il gère l'affichage du contenu, la disposition des
-            éléments ainsi que toute la mise en forme. Les propriétés CSS sont très nombreuses et permettent d'appliquer
-            des propriétés à pratiquement tous les détails de contenu que l'on peut imaginer c'est un langage très
-            complet et très puissant et assez long à prendre en main. On peut le diviser en plusieurs fichiers pour un
-            site web car un fichier de style peut-être très volumineux et par conséquent très difficile à maintenir.</p>
-
-          <p>On peut ensuite automatiser du CSS et générer du HTML avec d'autres langages comme JavaScript ou PHP, on
-            anime, on dynamise.
-            Beaucoup de documentation sont disponibles je les utilise quotidiennement je ferai part des découvertes que
-            j'ai fait les liens sont disponibles sur le site.</p>
-
+          <h2>PHP</h2>
+          <p> Le rôle de PHP sera le
+            lien avec un serveur de base de données, il permet de générer du contenu html qui sera fournit au serveur
+            HTTP.
+            Il n'est pas visible coté navigateur, il agira uniquement coté serveur, c'est le language Back End. Ainsi on
+            crée des sites dynamiques <i>interactifs</i>, évolutions des sites statiques <i>uniquement lisibles</i>.</p>
 
         </div>
 

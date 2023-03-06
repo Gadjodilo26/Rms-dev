@@ -11,10 +11,10 @@
 
 body {
   position: relative;
-  color: black;
-  background: linear-gradient(orange, red);
+  background: rgb(30, 80, 175);
+  background: linear-gradient(350deg, rgba(30, 80, 175, 1) 2%, rgba(10, 45, 120, 1) 51%, rgba(0, 80, 255, 1) 100%);
   color: aliceblue;
-  
+
 }
 
 #logo {
@@ -29,13 +29,17 @@ h1 {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  background-color: black;
+  background: rgb(30, 55, 100);
+  background: linear-gradient(350deg, rgba(20, 70, 90, 1) 2%, rgba(20, 10, 120, 1) 50%, rgba(25, 60, 120, 1) 100%);
   color: aliceblue;
   height: 120px;
   width: 100%;
   text-align: center;
-  margin-bottom: 15px;
+
+  box-shadow: 0px 0px 10px #eee7e7,
+    0px 0px 30px #111111;
 }
+
 
 /*Contenu*/
 
@@ -51,43 +55,48 @@ nav {
 article {
   display: flex;
   flex-direction: column;
-  border: 2px solid aliceblue;
   background-color: rgba(0, 0, 0, 0.250);
-  justify-content: space-between;
-  padding: 45px;
-  margin-bottom: 15px;
-  border-radius: 15px;
+  border-radius: 5px;
+
+
 }
 
 h2 {
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: center;
   height: 70px;
+  width: 50%;
   padding-left: 30px;
   padding-right: 30px;
-  align-items: center;
+
   text-align: center;
-  background-color: black;
+  background: rgb(30, 55, 100);
+  background: linear-gradient(350deg, rgba(20, 70, 90, 1) 2%, rgba(20, 10, 120, 1) 50%, rgba(25, 60, 120, 1) 100%);
   box-shadow: 0px 0px 10px #eee7e7,
     0px 0px 30px #111111;
-  border-radius: 15px;
-  margin-bottom: 60px;
+  border-radius: 5px;
+  margin: 40px auto;
+
+
+
 
 }
 
 h3 {
   margin: 20px;
   font-size: 25px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 p {
   width: 98%;
   margin: auto;
   text-align: left;
-  margin-bottom: 20px;
-  word-spacing: 0.5px;
+  margin-bottom: 60px;
+  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
   font-size: 22px;
 
 }
@@ -100,6 +109,8 @@ p {
   margin-bottom: 30px;
 }
 
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
 @media screen and (max-width: 980px) {
 
 
@@ -108,7 +119,8 @@ p {
   header {
     height: 500px;
     width: 100%;
-    background: linear-gradient(orange, red);
+    background: rgb(29, 79, 173);
+    background: linear-gradient(350deg, rgba(29, 79, 173, 1) 2%, rgba(9, 44, 121, 1) 51%, rgba(0, 80, 255, 1) 100%);
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
@@ -126,8 +138,8 @@ p {
   h1 {
 
     height: 100px;
-    background-color: black;
-
+    background: rgb(29, 53, 97);
+    background: linear-gradient(350deg, rgba(29, 53, 97, 1) 2%, rgba(12, 9, 121, 1) 51%, rgba(24, 56, 126, 1) 100%);
 
   }
 
@@ -135,12 +147,20 @@ p {
   /*Contenu*/
 
   main {
-    width: 95%;
+    width: 100%;
     margin: auto;
   }
 
+  article {
+    margin: 20px 8px;
+    padding: 10px 10px;
+
+
+  }
 
 }
+
+/*---------------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width:980px) {
 
@@ -157,9 +177,9 @@ p {
   nav {
     top: 0;
     width: 100%;
-    height: 35px;
+    height: 50px;
     margin: 0 0;
-    background: black;
+    background: rgba(0, 0, 0, 0.664);
     position: fixed;
     display: flex;
     justify-content: space-around;
@@ -208,6 +228,7 @@ p {
     justify-content: center;
     height: 100%;
     color: aliceblue;
+    font-size: 20px;
   }
 
   nav a:hover {
@@ -232,10 +253,16 @@ p {
     color: gold;
   }
 
+  .logoreseau a {
+    height: max-content;
+    width: max-content;
+  }
+
   .logoreseau {
     display: flex;
-    height: 100%;
-    width: 10%;
+    height: 80%;
+    min-width: 10%;
+    max-width: 12%;
     justify-content: center;
     align-items: center;
   }
@@ -245,7 +272,8 @@ p {
 
   header {
     width: 100%;
-    background: linear-gradient(orange, red);
+    background: rgb(29, 79, 173);
+    background: linear-gradient(350deg, rgba(29, 79, 173, 1) 2%, rgba(9, 44, 121, 1) 51%, rgba(0, 80, 255, 1) 100%);
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -275,6 +303,12 @@ p {
     justify-content: space-around;
   }
 
+  article {
+
+    margin: 30px 15px;
+    padding: 20px 10px;
+  }
+
   main {
     display: flex;
     flex-flow: column wrap;
@@ -285,9 +319,9 @@ p {
 
   aside {
     width: 32%;
-    border: 2px solid aliceblue;
     background-color: rgba(0, 0, 0, 0.250);
-    border-radius: 15px;
+    border-radius: 5px;
+    margin: 30px 15px;
   }
 
 }
